@@ -1,0 +1,25 @@
+## these files have to be added to source control specifically
+*.png
+*.csv
+*.html
+*.zip
+*.docx
+*.pptx
+*.pdf
+
+## latex
+*.aux
+*.bbl
+*.blg
+*.lof
+*.log
+*.lot
+*.out
+*.spl
+*.synctex.gz
+*.toc
+
+## python
+*.py[cod]
+*.ipynb_checkpoints
+__pycache__
