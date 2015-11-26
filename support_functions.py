@@ -1,6 +1,14 @@
 # JSAnimation import available at https://github.com/jakevdp/JSAnimation
 from JSAnimation.IPython_display import display_animation, anim_to_html
 from matplotlib import animation
+import numpy as np
+import matplotlib.pyplot as plt
+
+def life_step(X):
+    """Game of life step using scipy tools"""
+    from scipy.signal import convolve2d
+    nbrs_count = convolve2d(X, np.ones((3, 3)), mode='same', boundary='wrap') - X
+    return (nbrs_count == 3) | (X & (nbrs_count == 2))
 
 def life_animation(X, dpi=10, frames=10, interval=300, mode='loop'):
     """Produce a Game of Life Animation
