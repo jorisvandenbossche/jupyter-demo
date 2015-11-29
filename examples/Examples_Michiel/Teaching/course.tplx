@@ -23,6 +23,18 @@
 \usepackage[calcwidth,newparttoc]{titlesec}
 \usepackage{titletoc}
 
+\mdfdefinestyle{warning}{%
+    linecolor=white,
+    align=center,
+    roundcorner=3pt,
+    innertopmargin=6pt,
+    innerbottommargin=5pt,
+    innerrightmargin=10pt,
+    innerleftmargin=10pt,
+    backgroundcolor=black!12,
+    skipabove=0.4\baselineskip
+}
+
 \input{page_layout_definition.tex}
 ((* endblock packages *))
 
