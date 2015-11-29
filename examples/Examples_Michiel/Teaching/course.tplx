@@ -1,0 +1,52 @@
+% Default to the notebook output style
+((* if not cell_style is defined *))
+    ((* set cell_style = 'style_ipython.tplx' *))
+((* endif *))
+
+% Inherit from the specified cell style.
+((* extends cell_style *))
+
+
+%===============================================================================
+% Latex Practicum-cursus
+%===============================================================================
+
+((* block docclass *))
+\documentclass[a4paper,12pt,dutch,twoside,makeidx]{book}
+((* endblock docclass *))
+
+((* block packages *))
+((( super() )))
+\usepackage[framemethod=TikZ]{mdframed}
+\usepackage{subfigure}
+\usepackage{fancyhdr}
+\usepackage[calcwidth,newparttoc]{titlesec}
+\usepackage{titletoc}
+
+\mdfdefinestyle{warning}{%
+    linecolor=white,
+    align=center,
+    roundcorner=3pt,
+    innertopmargin=6pt,
+    innerbottommargin=5pt,
+    innerrightmargin=10pt,
+    innerleftmargin=10pt,
+    backgroundcolor=black!12,
+    skipabove=0.4\baselineskip
+}
+
+\input{page_layout_definition.tex}
+((* endblock packages *))
+
+((* block predoc *))
+    \frontmatter
+    \include{W4-Voorblad}
+    ((* block tableofcontents *))\tableofcontents((* endblock tableofcontents *))
+    \mainmatter
+((* endblock predoc *))
+
+((* block markdowncell scoped *))
+((( cell.source | citation2latex | strip_files_prefix | markdown2latex(extra_args=["--chapters"]) )))
+((* endblock markdowncell *))
+
+
