@@ -1,5 +1,5 @@
 # jupyter-demo
-Demonstration of Jupyter usage at the department and elsewhere
+Demonstration of Jupyter usage at the [UGent BW10](http://biomath.ugent.be/) department and elsewhere
 
 
 To use a hosted Jupyter environment:
@@ -11,3 +11,6 @@ To use a hosted Jupyter environment:
   - Log in with your eraser-account. This runs the notebooks on the eraser cluster
 
 If your are not connected to the university internet, you can also use https://try.jupyter.org/
+
+
+Authors: Stijn Van Hoey, Michiel Stock, Joris Van den Bossche
