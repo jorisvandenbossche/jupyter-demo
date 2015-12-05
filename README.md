@@ -1,5 +1,5 @@
 # jupyter-demo
-Demonstration of Jupyter usage at the [UGent BW10](http://biomath.ugent.be/) department and elsewhere
+Demonstration of Jupyter usage at the [Ghent Univiersity BW10](http://biomath.ugent.be/) department and elsewhere
 
 
 To use a hosted Jupyter environment:

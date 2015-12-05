@@ -1,3 +1,5 @@
+# Source: https://jakevdp.github.io/blog/2013/08/07/conways-game-of-life/
+
 # JSAnimation import available at https://github.com/jakevdp/JSAnimation
 from JSAnimation.IPython_display import display_animation, anim_to_html
 from matplotlib import animation
